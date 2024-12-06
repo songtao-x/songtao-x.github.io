@@ -1,1 +1,1 @@
-[Download My CV](/CV.pdf)
+[My CV is here.](/CV.pdf)
