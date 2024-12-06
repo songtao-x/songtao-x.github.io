@@ -1,1 +1,1 @@
-[My CV is here.](https://github.com/zerowst.github.io/CV.pdf)
+[My CV is here.](https://zerowst.github.io/CV.pdf)
