@@ -1,0 +1,118 @@
+:root {
+  --accent-color: #913957; --accent-hover: #ad4869; --accent-bg: #fcf1f5; --accent-border: #eccbd7;
+  --primary-text: #252631; --secondary-text: #50535f; --muted-text: #6c6d78;
+  --link-color: #913957; --border-light: #e9e5e9; --max-width: 960px; --bg-page: #fff;
+}
+html { scroll-padding-top: 96px; background: #fff; }
+body { padding-top: 24px; background: #fff; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible { outline: 3px solid #913957; outline-offset: 5px; }
+.skip-link { position: fixed; z-index: 200; top: 10px; left: 16px; padding: 8px 16px; background: white; border-radius: 8px; transform: translateY(-180%); }
+.skip-link:focus { transform: translateY(0); }
+.site-nav { max-width: calc(100% - 28px); padding: 6px 10px; background: #fff; border-color: var(--border-light); box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.nav-inner { gap: 20px; }
+.nav-brand { font-size: 1.2rem; color: var(--accent-color); padding-right: 16px; border-right: 1px solid var(--border-light); border-radius: 0; }
+.nav-brand span { display: inline; }
+.nav-links a { padding: 6px 12px; }
+.main-container { margin-top: 36px; padding: 40px 58px; background: #fff; border: 0; border-radius: 0; box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.profile-header { display: grid; grid-template-columns: minmax(0, 1fr) 180px; grid-template-areas: "details avatar" "links avatar"; gap: 20px 40px; align-items: center; padding-bottom: 36px; margin-bottom: 32px; }
+.profile-details { grid-area: details; min-width: 0; align-self: end; }
+.profile-avatar { grid-area: avatar; width: 180px; height: 180px; object-fit: cover; border-radius: 8px; border: 1px solid #eee; box-shadow: none; transition: none; }
+.profile-avatar:hover { transform: none; }
+.profile-name { font-size: clamp(2.1rem, 4.4vw, 2.9rem); font-weight: 600; letter-spacing: -.045em; }
+.name-period { color: var(--accent-color); }
+.profile-role { font-size: .96rem; margin-top: 12px; margin-bottom: 1px; font-weight: 500; }
+.profile-affiliation { margin: 0; font-size: .84rem; color: var(--muted-text); }
+.profile-affiliation > span { padding: 0 5px; color: #c3b6bf; }
+.quick-links { grid-area: links; align-self: start; margin: 0; gap: 7px; }
+.quick-link { padding: 6px 11px; font-size: .77rem; border-color: #e6dfe6; box-shadow: none; }
+.quick-link svg { width: 13px; height: 13px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.link-arrow { padding-left: 3px; }
+.section-title { font-size: 1.6rem; font-weight: 600; gap: 14px; margin-top: 44px; padding-bottom: 12px; border-bottom-width: 1px; scroll-margin-top: 0; }
+#about-me { margin-top: 0; }
+p { font-size: .93rem; line-height: 1.8; }
+.lead { font-size: .98rem; line-height: 1.8; }
+strong { color: #34333e; font-weight: 600; }
+.experience-date { color: #746979; font-size: .74rem; white-space: nowrap; padding-top: 4px; }
+.teaching-heading { display: flex; justify-content: space-between; gap: 14px; }
+.teaching-heading h3 { font-family: var(--font-body); font-size: .92rem; margin: 0; font-weight: 600; }
+.teaching-heading p { margin: 4px 0 16px; font-size: .82rem; }
+.course-list { list-style: none; padding: 0; margin: 0; }
+.course-list li { padding: 10px 0; display: flex; align-items: center; gap: 18px; border-top: 1px solid #eeeaf0; font-size: .82rem; }
+.course-code { font-size: .7rem; color: var(--accent-color); background: var(--accent-bg); border-radius: 4px; padding: 4px 7px; white-space: nowrap; }
+.skills-line { font-size: .78rem; color: var(--muted-text); }
+.skills-line .label-strong { margin-right: 10px; font-size: .75rem; font-weight: 500; }
+.eyebrow { margin: 0 0 10px; font-size: 10px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--accent-color); }
+.contact-strip { display: flex; justify-content: space-between; align-items: center; gap: 20px; border-top: 1px solid var(--border-light); margin-top: 38px; padding-top: 26px; }
+.contact-strip .eyebrow { font-size: .55rem; }
+.contact-strip p { margin: 4px 0 0; font-family: var(--font-heading); font-size: 1.35rem; color: var(--primary-text); }
+.contact-strip > a { font-size: .8rem; }
+.contact-strip > a span { padding-left: 6px; }
+.site-footer { position: relative; font-size: .72rem; padding-top: 0; margin-bottom: 60px; }
+.site-footer p { font-size: inherit; }
+
+/* A compact academic bibliography with all publications visible. */
+.publication-note { margin: -4px 0 18px; color: var(--muted-text); font-size: .78rem; }
+.publication-list { list-style: none; padding: 0; margin: 0; }
+.publication-entry { padding: 0 0 22px; margin: 0 0 22px; border-bottom: 1px solid var(--border-light); }
+.publication-entry:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: 0; }
+.publication-title { font-family: var(--font-body); font-size: .95rem; font-weight: 600; line-height: 1.6; margin: 0 0 6px; }
+.publication-title a { color: var(--primary-text); }
+.publication-title a:hover { color: var(--accent-color); }
+.publication-authors, .publication-venue { font-size: .84rem; line-height: 1.75; margin: 3px 0; }
+.publication-authors { color: var(--secondary-text); }
+.publication-venue { color: #625d69; }
+.publication-links { display: flex; align-items: center; gap: 10px; font-size: .8rem; line-height: 1.5; margin: 8px 0 0; }
+.publication-links a { display: inline-block; padding: 3px 0; text-decoration: underline; text-underline-offset: 3px; }
+.publication-links span { color: #b7aab4; }
+
+@media(max-width: 768px) {
+  body { padding-top: 12px; }
+  .site-nav { padding: 4px 7px; width: fit-content; max-width: calc(100% - 20px); }
+  .nav-inner { gap: 4px; padding: 0 3px; }
+  .nav-brand { padding: 4px 10px 4px 4px; font-size: 1.15rem; }
+  .nav-links { min-width: 0; }
+  .nav-links a { font-size: .71rem; padding: 7px 9px; }
+  .main-container { margin: 22px 14px 28px; padding: 32px 25px; }
+  .profile-header { grid-template-columns: minmax(0, 1fr) 140px; gap: 18px 24px; text-align: left; }
+  .profile-avatar { width: 140px; height: 140px; }
+  .profile-name { font-size: 2.3rem; }
+}
+@media(max-width: 520px) {
+  .main-container { margin-left: 10px; margin-right: 10px; padding: 28px 16px; }
+  .profile-header { grid-template-columns: minmax(0, 1fr) 88px; grid-template-areas: "details avatar" "links links"; gap: 20px 16px; align-items: start; padding-bottom: 28px; }
+  .profile-details { align-self: start; }
+  .profile-avatar { width: 88px; height: 88px; }
+  .profile-name { font-size: clamp(1.75rem, 6.9vw, 2.2rem); }
+  .profile-role { font-size: .84rem; margin-top: 10px; line-height: 1.6; }
+  .profile-affiliation { font-size: .74rem; line-height: 1.7; }
+  .quick-links { gap: 6px; justify-content: flex-start; }
+  .quick-link { font-size: .72rem; padding: 7px 10px; }
+  .section-title { font-size: 1.4rem; gap: 10px; margin-top: 36px; }
+  p, .lead { font-size: .87rem; }
+  .experience-date { margin-bottom: 6px; font-size: .7rem; }
+  .teaching-heading { display: block; }
+  .teaching-heading .experience-date { display: block; margin: -8px 0 14px; }
+  .course-list li { gap: 10px; font-size: .77rem; }
+  .contact-strip { display: block; }
+  .contact-strip > a { display: inline-block; margin-top: 12px; }
+  .site-nav { width: calc(100% - 32px); }
+  .nav-brand { display: none; }
+  .nav-inner { padding: 0; width: 100%; }
+  .nav-links { width: 100%; justify-content: space-between; }
+  .nav-links a { font-size: .72rem; padding: 8px 12px; }
+  .publication-title { font-size: .89rem; }
+  .publication-authors, .publication-venue { font-size: .8rem; }
+  .publication-links a { padding: 7px 0; }
+}
+@media(prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .quick-link { transition: none; transform: none; }
+}
+@media print {
+  body { padding: 0; background: white; color: black; }
+  .site-nav, .skip-link { display: none !important; }
+  .main-container { margin: 0; padding: 0; max-width: none; }
+  .publication-entry { break-inside: avoid; }
+}
+[hidden] { display: none !important; }
