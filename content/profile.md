@@ -3,6 +3,7 @@
   <p class="profile-role">Ph.D. Student in Computing Science</p>
   <p class="profile-affiliation">University of Alberta <span aria-hidden="true">/</span> Edmonton, Canada</p>
 </div>
+<img class="profile-avatar" src="assets/songtao-wang-avatar.png" alt="Songtao Wang" width="176" height="176" decoding="async">
 <div class="quick-links">
     <a class="quick-link" href="mailto:songtao2@ualberta.ca"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>Email</a>
     <a class="quick-link" href="https://scholar.google.com/citations?user=LObkPDQAAAAJ" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5zM6 11v6c4 3 8 3 12 0v-6M22 9v8"/></svg>Scholar</a>
